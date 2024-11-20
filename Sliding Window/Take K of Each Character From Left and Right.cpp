@@ -29,7 +29,7 @@ public:
         tempFreqLeft[s[i] - 'a'] += 1;
         solve(s, k, i+1, j, minutes+1, tempFreqLeft);
 
-        //De;ete from right
+        //Delete from right
         vector<int> tempFreqRight = freq;
         tempFreqRight[s[j] - 'a'] += 1;
         solve(s, k, i, j-1, minutes+1, tempFreqRight);
